@@ -41,5 +41,30 @@ fn main() {
 
     let x = x*2;
 
+    let mut number = 3;
+    
+    while number != 0{
+        println!("{}", number);
+
+        number = number - 1;
+    }
+
     println!("The value of x is {}", x);
-}
+
+    let y = [0, 10, 23, 45, 34];
+
+    for i in y{
+        println!("the value is {}", i);
+    }
+
+    for num in (1..4).rev(){
+        println!("the number is {}", num);
+    }
+    println!("Liftoff");
+
+    let mut s = String::from("value");
+
+    s.push_str(" is what");
+
+    println!("{}", s);
+} 
